@@ -24,7 +24,7 @@ autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_packa
 
 ```
 mkdir /scripts
-curl_cli -k '[https://raw.githubusercontent.com/leinadred/CP_Indentity-Sharing-with-CME/refs/heads/master/cme_identitysharing.bash](https://raw.githubusercontent.com/MakaJzki/checkpoint/refs/heads/main/cme_identitysharing_cluster.bash)' -O /scripts/cme_identitysharing_cluster.bash
+curl_cli -k 'https://raw.githubusercontent.com/MakaJzki/checkpoint/refs/heads/main/cme_identitysharing_cluster.bash' -O /scripts/cme_identitysharing_cluster.bash
 chmod a+x /scripts/cme_identitysharing_cluster.bash
 autoprov-cfg set management -cs '/scripts/cme_identitysharing_cluster.bash'
 autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_package_name_of_receiving_device> <name_of_sharing_device> <policy_package_name_of_sharing_device>`
