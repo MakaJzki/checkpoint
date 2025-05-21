@@ -30,7 +30,7 @@ autoprov-cfg set management -cs '/scripts/cme_identitysharing_cluster.bash'
 autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_package_name_of_receiving_device> <name_of_sharing_device> <policy_package_name_of_sharing_device>`
 ```
 
-__Difference Between the scripts_
+_Difference Between the scripts_
 
 ---
 
