@@ -14,7 +14,7 @@
 
 ```
 mkdir /scripts
-curl_cli -k 'https://raw.githubusercontent.com/MakaJzki/checkpoint/refs/heads/main/cme_identitysharing_cluster.bash' -O /scripts/cme_identitysharing_single.bash
+curl_cli -k 'https://raw.githubusercontent.com/MakaJzki/checkpoint/refs/heads/main/cme_identitysharing_single.bash' -O /scripts/cme_identitysharing_single.bash
 chmod a+x /scripts/cme_identitysharing_single.bash
 autoprov-cfg set management -cs '/scripts/cme_identitysharing_single.bash'
 autoprov-cfg set template -tn '<cme_template_name>' -cp 'IDSHARING <policy_package_name_of_receiving_device> <name_of_sharing_device> <policy_package_name_of_sharing_device>`
